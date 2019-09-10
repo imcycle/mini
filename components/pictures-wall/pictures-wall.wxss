@@ -1,0 +1,50 @@
+.picBox {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 208rpx;
+  height: 208rpx;
+  margin-right: 26rpx;
+  margin-bottom: 26rpx;
+  border-radius: 4rpx;
+  border: 1px solid rgba(204,204,204,1);
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+}
+
+.picDelete {
+  position: absolute;
+  left: -32rpx;
+  top: -32rpx;
+  height: 64rpx;
+  width: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+}
+
+.picturesWall .picBox:nth-child(3n) {
+  margin-right: 0;
+}
+
+.addicon {
+  position: absolute;
+  display: inline-block;
+  left: 104rpx;
+  top: 54rpx;
+  height: 100rpx;
+  width: 0rpx;
+  border-right: 1px solid #CCCCCC;
+}
+.addicon::after {
+  content: '';
+  position: absolute;
+  top: 50rpx;
+  left: -50rpx;
+  display: block;
+  height: 0rpx;
+  width: 100rpx;
+  border-bottom: 1px solid #CCCCCC;
+}

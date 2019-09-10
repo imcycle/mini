@@ -1,6 +1,17 @@
 //app.js
 App({
   onLaunch: function () {
+    // finally
+    Promise.prototype.finally = function (callback) {
+      let P = this.constructor;
+      return this.then(
+        value => P.resolve(callback()).then(() => value),
+        reason => P.resolve(callback()).then(() => { throw reason })
+      );
+    };
+
+
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

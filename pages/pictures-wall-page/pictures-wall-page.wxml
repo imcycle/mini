@@ -1,0 +1,6 @@
+<view style="padding: 20rpx;">
+  <view style="margin-bottom: 20rpx;">空白列表</view>
+  <pictures-wall mydata="{{picList}}" mymaxcount="{{9}}" bindmychange="handlePicturesChange" />
+  <view style="margin-bottom: 20rpx;">默认值列表</view>
+  <pictures-wall mydata="{{picList1}}" mymaxcount="{{9}}" bindmychange="handlePicturesChange1" />
+</view>

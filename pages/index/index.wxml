@@ -12,5 +12,6 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <button bindtap="gotoPicturesWall">照片墙</button>
   <button bindtap="gotoCalendar">日历</button>
 </view>

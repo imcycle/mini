@@ -52,7 +52,11 @@ Page({
     })
   },
 
+  gotoPicturesWall: function () {
+    wx.navigateTo({ url: '/pages/pictures-wall-page/pictures-wall-page' });
+  },
+
   gotoCalendar: function () {
-    wx.navigateTo({ url: '/pages/calendar-page/calendar-page' })
+    wx.navigateTo({ url: '/pages/calendar-page/calendar-page' });
   },
 })

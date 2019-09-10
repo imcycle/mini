@@ -1,0 +1,9 @@
+<view class="picturesWall">
+  <view class="picBox" wx:for="{{mydata}}" wx:key="{{index}}">
+    <image class="pic" src="{{item.filePath || item.url}}" />
+    <view class="picDelete" data-index="{{index}}" bindtap="handleImageDelete">x</view>
+  </view>
+  <view class="picBox" wx:if="{{canUseCount > 0}}" bindtap="handleUpload">
+    <view class="addicon"></view>
+  </view>
+</view>

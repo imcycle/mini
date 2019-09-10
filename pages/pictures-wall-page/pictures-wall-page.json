@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "照片墙",
+  "usingComponents": {
+    "pictures-wall": "/components/pictures-wall/pictures-wall"
+  }
+}
