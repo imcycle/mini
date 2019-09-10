@@ -1,0 +1,25 @@
+<view class="component">
+  <view class="header">
+    <view bindtap="handlePrevMonthClick">{{'<'}}</view>
+    <view>{{year}}年{{month}}月</view>
+    <view bindtap="handleNextMonthClick">></view>
+  </view>
+  <view>
+    <view class="week">周一</view>
+    <view class="week">周二</view>
+    <view class="week">周三</view>
+    <view class="week">周四</view>
+    <view class="week">周五</view>
+    <view class="week">周六</view>
+    <view class="week">周日</view>
+  </view>
+  <view class="daybox">
+    <block wx:for="{{dayList}}" wx:key="{{index}}">
+      <view wx:if="{{item.day}}" class="day {{item.day === day ? 'day-checked': ''}} {{item.bg ? 'day-bg' : ''}}" data-day="{{item.day}}" bindtap="handleDayClick">
+        <view>{{item.isToday ? '今天' : item.day}}</view>
+        <view class="point" wx:if="{{item.point}}"></view>
+      </view>
+      <view wx:else class="day"></view>
+    </block>
+  </view>
+</view>

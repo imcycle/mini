@@ -1,0 +1,65 @@
+.component {
+  background: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx;
+  border-top: 1px solid #eee;
+}
+.header view {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  color: rgba(0, 0, 0, 0.85);
+  min-width: 100rpx;
+}
+.header view:nth-child(2n-1) {
+  font-size: 50rpx;
+}
+
+.week {
+  display: inline-block;
+  width: 107rpx;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.daybox {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+}
+
+.day {
+  width: 107rpx;
+  height: 107rpx;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.85);
+  border: 4rpx solid #fff;
+}
+
+.day:nth-child(7n), .day:nth-child(7n-1) {
+  color: #ff9b80;
+}
+
+.day-checked {
+  border: 4rpx solid #ffa78f!important;
+  border-radius: 10rpx;
+}
+.day-bg {
+  background: #ffe9e4!important;
+}
+
+.point {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #ff876d;
+  margin: 0 auto;
+  margin-top: 5rpx;
+}
