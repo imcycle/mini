@@ -35,7 +35,7 @@ Component({
     uploadFile: function (filePath) {
       return new Promise((resolve, reject) => {
         wx.uploadFile({
-          url: 'https://test.duliday.com/workorder/storage',
+          url: 'http://deployment.whosmeya.com/api/postok',
           filePath,
           name: 'file',
           success: (res) => {

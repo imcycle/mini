@@ -1,17 +1,6 @@
-<!-- index.wxml -->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-      获取头像昵称
-    </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <button bindtap="gotoPicturesWall">照片墙</button>
-  <button bindtap="gotoCalendar">日历</button>
-</view>
+<view class="title">github地址</view>
+<view style="margin-bottom: 32rpx;">https://github.com/whosMeya/mini</view>
+<button data-url="https://github.com/whosMeya/mini" bindtap="copy">复制链接到剪贴板</button>
+<view class="title">项目列表</view>
+<button data-url="/pages/pictures-wall-page/pictures-wall-page" bindtap="gotoPage">照片墙</button>
+<button data-url="/pages/calendar-page/calendar-page" bindtap="gotoPage">日历</button>
