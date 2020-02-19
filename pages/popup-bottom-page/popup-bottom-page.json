@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "底部弹框",
+  "usingComponents": {
+    "popup-bottom": "/components/popup-bottom/popup-bottom"
+  }
+}

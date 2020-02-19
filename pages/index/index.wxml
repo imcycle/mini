@@ -1,6 +1,7 @@
 <view class="title">github地址</view>
 <view style="margin-bottom: 32rpx;">https://github.com/whosMeya/mini</view>
 <button data-url="https://github.com/whosMeya/mini" bindtap="copy">复制链接到剪贴板</button>
-<view class="title">项目列表</view>
+<view class="title">组件列表</view>
 <button data-url="/pages/pictures-wall-page/pictures-wall-page" bindtap="gotoPage">照片墙</button>
 <button data-url="/pages/calendar-page/calendar-page" bindtap="gotoPage">日历</button>
+<button data-url="/pages/popup-bottom-page/popup-bottom-page" bindtap="gotoPage">底部弹框</button>

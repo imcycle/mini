@@ -1,0 +1,8 @@
+<button bindtap="handleShow">点我弹出popup</button>
+<popup-bottom myVisible="{{visible}}" bindmyOnCancel="handleCancel">
+  <view>我是内容</view>
+  <view>我是内容</view>
+  <view>我是内容</view>
+  <view>我是内容</view>
+  <view>我是内容</view>
+</popup-bottom>
