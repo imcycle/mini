@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/pictures-wall-page/pictures-wall-page",
     "pages/calendar-page/calendar-page",
+    "pages/popup-bottom-page/popup-bottom-page",
     "pages/logs/logs"
   ],
   "window": {
