@@ -21,4 +21,7 @@ Page({
     this.setData({ mydate: date });
   },
 
+  onShareAppMessage: function () {
+    return {}
+  },
 })

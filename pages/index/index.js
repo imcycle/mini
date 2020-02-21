@@ -13,4 +13,8 @@ Page({
     wx.navigateTo({ url });
   },
 
+  onShareAppMessage: function () {
+    return {}
+  }
+
 })

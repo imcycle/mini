@@ -7,7 +7,13 @@ Page({
   handlePicturesChange: function ({ detail }) {
     this.setData({ picList: detail })
   },
+
   handlePicturesChange1: function ({ detail }) {
     this.setData({ picList1: detail })
   },
+
+  onShareAppMessage: function () {
+    return {}
+  },
+
 })

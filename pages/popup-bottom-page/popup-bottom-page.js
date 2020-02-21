@@ -10,4 +10,8 @@ Page({
   handleCancel: function () {
     this.setData({ visible: false });
   },
+
+  onShareAppMessage: function () {
+    return {}
+  },
 })
